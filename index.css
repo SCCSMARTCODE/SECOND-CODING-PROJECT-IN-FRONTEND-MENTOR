@@ -1,0 +1,125 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color:  hsl(30, 38%, 92%);
+    font-size: 14px;
+}
+.project{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: row;
+    width: 520px;
+    height: 390px;
+    margin-top: 65px;
+    border-radius: 10px;
+}
+img{
+    width: 260px;
+    height: 390px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.content{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.perfume{
+    font-family: sans-serif;
+    font-size: 10.5px;
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+    filter: blur(0.5px);
+    font-weight: 100;
+}
+.theh1{
+    font-weight: 900;
+    font-family: serif;
+    color:  hsl(212, 21%, 14%);
+     -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color:  hsl(212, 21%, 14%);
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+.thep{
+    color: hsl(228, 12%, 48%);
+    filter: blur(0.5px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 13.5px;
+}
+.big{
+    font-size: 30px;
+    padding: 5px;
+    margin-right: 6px;
+    color: hsl(158, 36%, 37%);
+    font-weight: 900;
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+    filter: blur(0.5px);
+}
+.amount{
+    /* border: 2px solid red; */
+    position: relative;
+    margin-bottom: 30px;
+}
+.small{
+     position: absolute;
+     top: 10px;
+     color: hsl(228, 12%, 48%); 
+     filter: blur(0.5px);
+}
+.button{
+    background-color: hsl(158, 36%, 37%);
+    width: 200px;
+    height: 45px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    filter: blur(0.5px);
+}
+button:hover{
+    filter: blur(0px);
+    background-color: hsl(157, 47%, 19%);
+    cursor: pointer;
+}
+ 
+ @media screen and (max-width:600px){
+    .project{
+        width: 480px;
+        height: 400px;
+    }
+    img{
+        width: 240px;
+        height: 400px;
+    }
+    .button{
+       width: 180px; 
+    }
+
+ }
+ @media screen and (max-width: 375px){
+    .project{
+        flex-direction: column;
+        width: 95%;
+        height: max-content;
+    }
+    img{
+        width: 100%;
+        margin: auto;
+        height: 250px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+    .button{
+        width: 100%; 
+     }
+
+ }
+ i{
+    margin-right: 6px;
+    font-size: 20px;
+ }
